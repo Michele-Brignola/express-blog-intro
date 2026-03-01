@@ -6,7 +6,7 @@ const port = 3000;
 const urlPort = "http://localhost:" + port;
 console.log("url " + urlPort);
 
-app.use(express.static("public"));
+app.use(express.static("./public"));
 
 // Rotta /
 app.get("/", (req, res) => {
